@@ -1,13 +1,15 @@
 package jp.hasshi.api
 
-import org.springframework.stereotype.Controller
 import org.springframework.web.bind.annotation.GetMapping
+import org.springframework.web.bind.annotation.RequestMapping
+import org.springframework.web.bind.annotation.RestController
 
-@Controller
+@RestController
+@RequestMapping("/api")
 class HelloController {
-    @GetMapping("/")
+    @GetMapping("/hello")
     fun sayHello(): String {
-        println("hello")
+//        helloService.sayHello()
         return "hello"
     }
 }
