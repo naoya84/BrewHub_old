@@ -8,11 +8,42 @@
 import SwiftUI
 
 struct CreateReportPageView: View {
+    @Binding var path: NavigationPath //path.appendで遷移する場合に使用する
+    @StateObject var viewModel: ViewModel
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("コメント")
+        TextEditor(text: $viewModel.report.text)
+            .frame(width: 300, height: 300)
+            .border(.black)
+        Button("投稿"){
+            viewModel.sendReport()
+            path.append(AppPath.Main)
+            print("投稿しました")
+        }
+    }
+}
+
+extension CreateReportPageView {
+    class ViewModel: ObservableObject {
+        @Published var report: Report
+        let container: DIContainer
+        
+        init(report: Report, container: DIContainer) {
+            self.report = report
+            self.container = container
+        }
+        
+        func sendReport(){
+            let reportRepository = container.reportRepository
+            reportRepository.create(report: report)
+        }
     }
 }
 
 #Preview {
-    CreateReportPageView()
+    CreateReportPageView(
+        path: .constant(NavigationPath()),
+        viewModel: .init(report: Report(text: ""), container: DIContainer.make())
+    )
 }

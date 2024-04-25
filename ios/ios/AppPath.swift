@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+enum AppPath{
+    case Main
+    case Record
+    case PhotoIndex
+    case CreateReport
+}

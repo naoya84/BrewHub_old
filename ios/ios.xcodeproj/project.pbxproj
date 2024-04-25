@@ -7,18 +7,71 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE7B803F2BCE9F9500D07420 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CE7B803E2BCE9F9500D07420 /* Alamofire */; };
+		CE7B80412BCE9F9500D07420 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = CE7B80402BCE9F9500D07420 /* AlamofireDynamic */; };
+		CE7B80432BCEA36400D07420 /* ReportRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7B80422BCEA36400D07420 /* ReportRepositoryTests.swift */; };
+		CE8290952BC28D11000C5AAD /* AppPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8290942BC28D11000C5AAD /* AppPath.swift */; };
+		CE8290982BC296C4000C5AAD /* PhotoIndexPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8290972BC296C4000C5AAD /* PhotoIndexPageView.swift */; };
+		CE82909B2BC2AABF000C5AAD /* PhotoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE82909A2BC2AABF000C5AAD /* PhotoRepository.swift */; };
+		CE82909D2BC2AB3C000C5AAD /* LocalPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE82909C2BC2AB3C000C5AAD /* LocalPhoto.swift */; };
+		CE82909F2BC2B4A8000C5AAD /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE82909E2BC2B4A8000C5AAD /* DIContainer.swift */; };
+		CE8290A12BC2CE50000C5AAD /* UUIDProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8290A02BC2CE50000C5AAD /* UUIDProvider.swift */; };
+		CE8290B52BC42C14000C5AAD /* ContentViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8290B42BC42C14000C5AAD /* ContentViewTests.swift */; };
+		CE8290B82BC4331F000C5AAD /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = CE8290B72BC4331F000C5AAD /* ViewInspector */; };
+		CE8290C02BC4EB09000C5AAD /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = CE8290BF2BC4EB09000C5AAD /* Nimble */; };
+		CE8290C22BC4ECDE000C5AAD /* PhotoIndexPageViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8290C12BC4ECDE000C5AAD /* PhotoIndexPageViewTests.swift */; };
+		CE8290C52BC4F7C9000C5AAD /* SpyPhotoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8290C42BC4F7C9000C5AAD /* SpyPhotoRepository.swift */; };
+		CE8290C72BCBA729000C5AAD /* DIContainerTestDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8290C62BCBA729000C5AAD /* DIContainerTestDouble.swift */; };
+		CE8290CD2BCBCDF6000C5AAD /* CreateReportPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8290CC2BCBCDF6000C5AAD /* CreateReportPageView.swift */; };
+		CE8290CF2BCBD0EA000C5AAD /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8290CE2BCBD0EA000C5AAD /* Report.swift */; };
+		CE8290D12BCBDCD4000C5AAD /* ReportRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8290D02BCBDCD4000C5AAD /* ReportRepository.swift */; };
+		CE8290D32BCBE28B000C5AAD /* CreateReportPageViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8290D22BCBE28B000C5AAD /* CreateReportPageViewTests.swift */; };
+		CE8290D52BCBE5A9000C5AAD /* SpyReportRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8290D42BCBE5A9000C5AAD /* SpyReportRepository.swift */; };
+		CEB9D6392BC1341B0050DF64 /* RecordPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB9D6382BC1341B0050DF64 /* RecordPageView.swift */; };
+		CEB9D63B2BC134DB0050DF64 /* CALayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB9D63A2BC134DB0050DF64 /* CALayerView.swift */; };
 		CEE727D42BB456CE00777459 /* iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE727D32BB456CE00777459 /* iosApp.swift */; };
 		CEE727D62BB456CE00777459 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE727D52BB456CE00777459 /* ContentView.swift */; };
 		CEE727D82BB456CF00777459 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE727D72BB456CF00777459 /* Assets.xcassets */; };
 		CEE727DB2BB456CF00777459 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE727DA2BB456CF00777459 /* Preview Assets.xcassets */; };
+		CEE727E92BB5B1E000777459 /* iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE727E82BB5B1E000777459 /* iosTests.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		CEE727EA2BB5B1E000777459 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEE727C82BB456CE00777459 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEE727CF2BB456CE00777459;
+			remoteInfo = ios;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		CE7B80422BCEA36400D07420 /* ReportRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportRepositoryTests.swift; sourceTree = "<group>"; };
+		CE8290942BC28D11000C5AAD /* AppPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPath.swift; sourceTree = "<group>"; };
+		CE8290972BC296C4000C5AAD /* PhotoIndexPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoIndexPageView.swift; sourceTree = "<group>"; };
+		CE82909A2BC2AABF000C5AAD /* PhotoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRepository.swift; sourceTree = "<group>"; };
+		CE82909C2BC2AB3C000C5AAD /* LocalPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalPhoto.swift; sourceTree = "<group>"; };
+		CE82909E2BC2B4A8000C5AAD /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		CE8290A02BC2CE50000C5AAD /* UUIDProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UUIDProvider.swift; sourceTree = "<group>"; };
+		CE8290B42BC42C14000C5AAD /* ContentViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewTests.swift; sourceTree = "<group>"; };
+		CE8290C12BC4ECDE000C5AAD /* PhotoIndexPageViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoIndexPageViewTests.swift; sourceTree = "<group>"; };
+		CE8290C42BC4F7C9000C5AAD /* SpyPhotoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyPhotoRepository.swift; sourceTree = "<group>"; };
+		CE8290C62BCBA729000C5AAD /* DIContainerTestDouble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainerTestDouble.swift; sourceTree = "<group>"; };
+		CE8290CC2BCBCDF6000C5AAD /* CreateReportPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateReportPageView.swift; sourceTree = "<group>"; };
+		CE8290CE2BCBD0EA000C5AAD /* Report.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = "<group>"; };
+		CE8290D02BCBDCD4000C5AAD /* ReportRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportRepository.swift; sourceTree = "<group>"; };
+		CE8290D22BCBE28B000C5AAD /* CreateReportPageViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateReportPageViewTests.swift; sourceTree = "<group>"; };
+		CE8290D42BCBE5A9000C5AAD /* SpyReportRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyReportRepository.swift; sourceTree = "<group>"; };
+		CEB9D6382BC1341B0050DF64 /* RecordPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordPageView.swift; sourceTree = "<group>"; };
+		CEB9D63A2BC134DB0050DF64 /* CALayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerView.swift; sourceTree = "<group>"; };
 		CEE727D02BB456CE00777459 /* ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEE727D32BB456CE00777459 /* iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iosApp.swift; sourceTree = "<group>"; };
 		CEE727D52BB456CE00777459 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CEE727D72BB456CF00777459 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEE727DA2BB456CF00777459 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CEE727E62BB5B1E000777459 /* iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEE727E82BB5B1E000777459 /* iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iosTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +79,86 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE7B803F2BCE9F9500D07420 /* Alamofire in Frameworks */,
+				CE7B80412BCE9F9500D07420 /* AlamofireDynamic in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEE727E32BB5B1E000777459 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE8290B82BC4331F000C5AAD /* ViewInspector in Frameworks */,
+				CE8290C02BC4EB09000C5AAD /* Nimble in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE7B80442BCEA36D00D07420 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE8290B42BC42C14000C5AAD /* ContentViewTests.swift */,
+				CE8290C12BC4ECDE000C5AAD /* PhotoIndexPageViewTests.swift */,
+				CE8290D22BCBE28B000C5AAD /* CreateReportPageViewTests.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CE7B80452BCEA38B00D07420 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				CE7B80422BCEA36400D07420 /* ReportRepositoryTests.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		CE8290962BC28D85000C5AAD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CEE727D52BB456CE00777459 /* ContentView.swift */,
+				CEB9D6382BC1341B0050DF64 /* RecordPageView.swift */,
+				CEB9D63A2BC134DB0050DF64 /* CALayerView.swift */,
+				CE8290972BC296C4000C5AAD /* PhotoIndexPageView.swift */,
+				CE8290CC2BCBCDF6000C5AAD /* CreateReportPageView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CE8290992BC2AA8C000C5AAD /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				CE82909A2BC2AABF000C5AAD /* PhotoRepository.swift */,
+				CE8290D02BCBDCD4000C5AAD /* ReportRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		CE8290BE2BC4EB09000C5AAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE8290C32BC4F75E000C5AAD /* TestDoubles */ = {
+			isa = PBXGroup;
+			children = (
+				CE8290C42BC4F7C9000C5AAD /* SpyPhotoRepository.swift */,
+				CE8290C62BCBA729000C5AAD /* DIContainerTestDouble.swift */,
+				CE8290D42BCBE5A9000C5AAD /* SpyReportRepository.swift */,
+			);
+			path = TestDoubles;
+			sourceTree = "<group>";
+		};
 		CEE727C72BB456CE00777459 = {
 			isa = PBXGroup;
 			children = (
 				CEE727D22BB456CE00777459 /* ios */,
+				CEE727E72BB5B1E000777459 /* iosTests */,
 				CEE727D12BB456CE00777459 /* Products */,
+				CE8290BE2BC4EB09000C5AAD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -44,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				CEE727D02BB456CE00777459 /* ios.app */,
+				CEE727E62BB5B1E000777459 /* iosTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -52,9 +175,15 @@
 			isa = PBXGroup;
 			children = (
 				CEE727D32BB456CE00777459 /* iosApp.swift */,
-				CEE727D52BB456CE00777459 /* ContentView.swift */,
-				CEE727D72BB456CF00777459 /* Assets.xcassets */,
+				CE8290942BC28D11000C5AAD /* AppPath.swift */,
+				CE8290A02BC2CE50000C5AAD /* UUIDProvider.swift */,
+				CE8290962BC28D85000C5AAD /* Views */,
+				CE8290992BC2AA8C000C5AAD /* Repositories */,
 				CEE727D92BB456CF00777459 /* Preview Content */,
+				CEE727D72BB456CF00777459 /* Assets.xcassets */,
+				CE82909C2BC2AB3C000C5AAD /* LocalPhoto.swift */,
+				CE8290CE2BCBD0EA000C5AAD /* Report.swift */,
+				CE82909E2BC2B4A8000C5AAD /* DIContainer.swift */,
 			);
 			path = ios;
 			sourceTree = "<group>";
@@ -67,6 +196,17 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		CEE727E72BB5B1E000777459 /* iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEE727E82BB5B1E000777459 /* iosTests.swift */,
+				CE8290C32BC4F75E000C5AAD /* TestDoubles */,
+				CE7B80442BCEA36D00D07420 /* Views */,
+				CE7B80452BCEA38B00D07420 /* Repositories */,
+			);
+			path = iosTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +217,42 @@
 				CEE727CC2BB456CE00777459 /* Sources */,
 				CEE727CD2BB456CE00777459 /* Frameworks */,
 				CEE727CE2BB456CE00777459 /* Resources */,
+				CEE727E12BB582E200777459 /* Run Script */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = ios;
+			packageProductDependencies = (
+				CE7B803E2BCE9F9500D07420 /* Alamofire */,
+				CE7B80402BCE9F9500D07420 /* AlamofireDynamic */,
+			);
 			productName = ios;
 			productReference = CEE727D02BB456CE00777459 /* ios.app */;
 			productType = "com.apple.product-type.application";
+		};
+		CEE727E52BB5B1E000777459 /* iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEE727EC2BB5B1E000777459 /* Build configuration list for PBXNativeTarget "iosTests" */;
+			buildPhases = (
+				CEE727E22BB5B1E000777459 /* Sources */,
+				CEE727E32BB5B1E000777459 /* Frameworks */,
+				CEE727E42BB5B1E000777459 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEE727EB2BB5B1E000777459 /* PBXTargetDependency */,
+			);
+			name = iosTests;
+			packageProductDependencies = (
+				CE8290B72BC4331F000C5AAD /* ViewInspector */,
+				CE8290BF2BC4EB09000C5AAD /* Nimble */,
+			);
+			productName = iosTests;
+			productReference = CEE727E62BB5B1E000777459 /* iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,6 +267,10 @@
 					CEE727CF2BB456CE00777459 = {
 						CreatedOnToolsVersion = 15.3;
 					};
+					CEE727E52BB5B1E000777459 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = CEE727CF2BB456CE00777459;
+					};
 				};
 			};
 			buildConfigurationList = CEE727CB2BB456CE00777459 /* Build configuration list for PBXProject "ios" */;
@@ -111,11 +282,17 @@
 				Base,
 			);
 			mainGroup = CEE727C72BB456CE00777459;
+			packageReferences = (
+				CE8290B62BC4331F000C5AAD /* XCRemoteSwiftPackageReference "ViewInspector" */,
+				CE8290BD2BC4EAB8000C5AAD /* XCRemoteSwiftPackageReference "Nimble" */,
+				CE7B803D2BCE9F9500D07420 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = CEE727D12BB456CE00777459 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				CEE727CF2BB456CE00777459 /* ios */,
+				CEE727E52BB5B1E000777459 /* iosTests */,
 			);
 		};
 /* End PBXProject section */
@@ -130,19 +307,81 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CEE727E42BB5B1E000777459 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CEE727E12BB582E200777459 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n# swiftlint autocorrect --format #自動修正の有効化\n  swiftlint\nelse\n  echo \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi\n\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CEE727CC2BB456CE00777459 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE82909D2BC2AB3C000C5AAD /* LocalPhoto.swift in Sources */,
+				CE82909B2BC2AABF000C5AAD /* PhotoRepository.swift in Sources */,
+				CEB9D63B2BC134DB0050DF64 /* CALayerView.swift in Sources */,
+				CE8290D12BCBDCD4000C5AAD /* ReportRepository.swift in Sources */,
+				CE8290CD2BCBCDF6000C5AAD /* CreateReportPageView.swift in Sources */,
+				CE8290A12BC2CE50000C5AAD /* UUIDProvider.swift in Sources */,
 				CEE727D62BB456CE00777459 /* ContentView.swift in Sources */,
 				CEE727D42BB456CE00777459 /* iosApp.swift in Sources */,
+				CE8290952BC28D11000C5AAD /* AppPath.swift in Sources */,
+				CEB9D6392BC1341B0050DF64 /* RecordPageView.swift in Sources */,
+				CE82909F2BC2B4A8000C5AAD /* DIContainer.swift in Sources */,
+				CE8290982BC296C4000C5AAD /* PhotoIndexPageView.swift in Sources */,
+				CE8290CF2BCBD0EA000C5AAD /* Report.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEE727E22BB5B1E000777459 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE8290C22BC4ECDE000C5AAD /* PhotoIndexPageViewTests.swift in Sources */,
+				CE8290C52BC4F7C9000C5AAD /* SpyPhotoRepository.swift in Sources */,
+				CE8290B52BC42C14000C5AAD /* ContentViewTests.swift in Sources */,
+				CE8290D32BCBE28B000C5AAD /* CreateReportPageViewTests.swift in Sources */,
+				CEE727E92BB5B1E000777459 /* iosTests.swift in Sources */,
+				CE7B80432BCEA36400D07420 /* ReportRepositoryTests.swift in Sources */,
+				CE8290D52BCBE5A9000C5AAD /* SpyReportRepository.swift in Sources */,
+				CE8290C72BCBA729000C5AAD /* DIContainerTestDouble.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEE727EB2BB5B1E000777459 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEE727CF2BB456CE00777459 /* ios */;
+			targetProxy = CEE727EA2BB5B1E000777459 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		CEE727DC2BB456CF00777459 /* Debug */ = {
@@ -269,24 +508,30 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ios/Preview Content\"";
-				DEVELOPMENT_TEAM = 4RWTU82TTB;
+				DEVELOPMENT_TEAM = 993Y9JRK8Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "take your video for sample swiftUI app";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "save the video to camera role";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.naoya.ios;
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.naoya.ios.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -298,27 +543,68 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ios/Preview Content\"";
-				DEVELOPMENT_TEAM = 4RWTU82TTB;
+				DEVELOPMENT_TEAM = 993Y9JRK8Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "take your video for sample swiftUI app";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "save the video to camera role";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.naoya.ios;
+				PRODUCT_BUNDLE_IDENTIFIER = com.naoya.ios.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CEE727ED2BB5B1E000777459 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4RWTU82TTB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.naoya.iosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ios";
+			};
+			name = Debug;
+		};
+		CEE727EE2BB5B1E000777459 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4RWTU82TTB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.naoya.iosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ios";
 			};
 			name = Release;
 		};
@@ -343,7 +629,66 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		CEE727EC2BB5B1E000777459 /* Build configuration list for PBXNativeTarget "iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEE727ED2BB5B1E000777459 /* Debug */,
+				CEE727EE2BB5B1E000777459 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE7B803D2BCE9F9500D07420 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+		CE8290B62BC4331F000C5AAD /* XCRemoteSwiftPackageReference "ViewInspector" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nalexn/ViewInspector";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.10;
+			};
+		};
+		CE8290BD2BC4EAB8000C5AAD /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 13.1.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE7B803E2BCE9F9500D07420 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE7B803D2BCE9F9500D07420 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		CE7B80402BCE9F9500D07420 /* AlamofireDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE7B803D2BCE9F9500D07420 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = AlamofireDynamic;
+		};
+		CE8290B72BC4331F000C5AAD /* ViewInspector */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE8290B62BC4331F000C5AAD /* XCRemoteSwiftPackageReference "ViewInspector" */;
+			productName = ViewInspector;
+		};
+		CE8290BF2BC4EB09000C5AAD /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE8290BD2BC4EAB8000C5AAD /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CEE727C82BB456CE00777459 /* Project object */;
 }

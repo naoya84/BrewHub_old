@@ -1,4 +1,4 @@
-package jp.hasshi.api
+package jp.hasshi.api.demo
 
 import org.springframework.stereotype.Service
 

@@ -8,11 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var path = NavigationPath()
+    @Binding var path: NavigationPath //path.appendで遷移する場合に使用する
     
     var body: some View {
-        VStack{
-            Text("sample")
+        List{
+            NavigationLink("写真を撮る", value: AppPath.Record)
+            NavigationLink("写真一覧を見る", value: AppPath.PhotoIndex)
+            NavigationLink("レポートを作成する", value: AppPath.CreateReport)
+//            Button("sample"){
+//                path.append(AppPath.PhotoIndex)
+//            }
         }
     }
 }
@@ -20,5 +25,5 @@ struct ContentView: View {
 
 
 #Preview {
-    ContentView()
+    ContentView(path: .constant(NavigationPath()))
 }

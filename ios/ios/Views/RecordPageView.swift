@@ -26,9 +26,11 @@ struct RecordPageView: View {
         @Published var captureSession: AVCaptureSession
         
         var output: AVCapturePhotoOutput?
+        var provider: UUIDProvider
         
-        init(captureSession: AVCaptureSession) {
+        init(captureSession: AVCaptureSession, provider: UUIDProvider) {
             self.captureSession = captureSession
+            self.provider = provider
             
             //Inputを指定し、セッションに登録
             guard let backCamera = AVCaptureDevice.default(for: .video),
@@ -66,8 +68,11 @@ struct RecordPageView: View {
 //                if let imageData = photo.fileDataRepresentation(), let capturedImage = UIImage(data: imageData) {
 //                    savePhotoToLibrary(image: capturedImage)
 //                }
+                
+                let uuid = provider.getUUID()
                 if let imageData = photo.fileDataRepresentation() {
-                    saveDataToFile(data: imageData, fileName: "sample.png")
+                    print(imageData)
+                    saveDataToFile(data: imageData, fileName: "\(uuid).png")
                 }
             }
         }
@@ -81,7 +86,11 @@ struct RecordPageView: View {
                 //
                 if !FileManager.default.fileExists(atPath: folderURL.path){
                     do {
-                        try FileManager.default.createDirectory(at: folderURL, withIntermediateDirectories: true, attributes: nil)
+                        try FileManager.default.createDirectory(
+                            at: folderURL,
+                            withIntermediateDirectories: true,
+                            attributes: nil
+                        )
                     } catch {
                         print("Failed to create folder: \(error.localizedDescription)")
                         return
@@ -121,7 +130,8 @@ struct RecordPageView: View {
 #Preview {
     RecordPageView(
         viewModel: RecordPageView.ViewModel(
-            captureSession: AVCaptureSession()
+            captureSession: AVCaptureSession(),
+            provider: UUIDProviderImpl()
         )
     )
 }

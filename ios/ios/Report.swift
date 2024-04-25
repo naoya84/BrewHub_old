@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+struct Report {
+    var text: String
+}

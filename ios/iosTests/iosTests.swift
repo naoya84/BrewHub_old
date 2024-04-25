@@ -6,6 +6,7 @@
 //
 
 import XCTest
+@testable import ios //別のターゲットのコードを参照できるようにしている
 
 final class iosTests: XCTestCase {
 

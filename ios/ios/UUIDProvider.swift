@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+protocol UUIDProvider{
+    func getUUID() -> String
+}
+
+struct UUIDProviderImpl: UUIDProvider{
+    func getUUID() -> String {
+        UUID().uuidString.lowercased()
+    }
+}

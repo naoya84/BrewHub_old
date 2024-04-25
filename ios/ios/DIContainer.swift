@@ -6,3 +6,15 @@
 //
 
 import Foundation
+
+struct DIContainer{
+    let photoRepository: PhotoRepository
+    let reportRepository: ReportRepository
+    
+    static func make()->DIContainer{
+        return DIContainer.init(
+            photoRepository: PhotoRepositoryImpl(),
+            reportRepository: ReportRepositoryImpl()
+        )
+    }
+}

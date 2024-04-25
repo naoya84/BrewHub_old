@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+struct LocalPhoto: Hashable{
+    let photoUrl: URL
+}

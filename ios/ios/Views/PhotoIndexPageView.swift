@@ -8,11 +8,26 @@
 import SwiftUI
 
 struct PhotoIndexPageView: View {
+    let container: DIContainer
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        let localPhoto: [LocalPhoto] = container.photoRepository.getAll()
+        
+        if localPhoto.isEmpty {
+            Text("写真がありません")
+        }else{
+            List {
+                ForEach(localPhoto, id: \.self){photo in
+                    Image(uiImage: UIImage(contentsOfFile: photo.photoUrl.path) ?? UIImage())
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 100)
+                }
+            }
+        }
     }
 }
 
 #Preview {
-    PhotoIndexPageView()
+    PhotoIndexPageView(container: DIContainer.make())
 }
