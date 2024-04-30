@@ -83,7 +83,6 @@ struct RecordPageView: View {
                 // フォルダのURLを作成
                 let folderURL = documentsDirectory.appendingPathComponent("BrewHub/Photo")
                 
-                //
                 if !FileManager.default.fileExists(atPath: folderURL.path){
                     do {
                         try FileManager.default.createDirectory(
