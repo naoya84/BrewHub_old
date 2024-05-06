@@ -16,8 +16,8 @@ class ReportController(val reportService: ReportService) {
     @PostMapping("/create")
     @ResponseStatus(HttpStatus.CREATED)
     fun create(body: SaveReportBody): Report {
-        //@ResponseBody: キーと値のペアでデータを受け取る
-        //@ModelAttribute: jsonなどのオブジェクトを受け取る
+        // @ResponseBody: キーと値のペアでデータを受け取る
+        // @ModelAttribute: jsonなどのオブジェクトを受け取る
         return reportService.create(body.text)
     }
 }

@@ -9,7 +9,7 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers.status
 import org.springframework.test.web.servlet.setup.MockMvcBuilders
 
-//class SpyHelloService: HelloService{
+// class SpyHelloService: HelloService{
 //    var sayHello_wasCalled = false
 //
 //    override fun sayHello(): String {
@@ -17,31 +17,34 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders
 //        return ""
 //    }
 //
-//}
+// }
 
 class HelloControllerTest {
 //    private var spyHelloService: SpyHelloService = SpyHelloService()
-    private var mockMvc: MockMvc = MockMvcBuilders.standaloneSetup(
+    private var mockMvc: MockMvc =
+        MockMvcBuilders.standaloneSetup(
 //        HelloController(helloService = spyHelloService)
-        HelloController()
-    ).build()
+            HelloController(),
+        ).build()
 
     @Nested
-    inner class `get_request`{
+    inner class `get_request` {
+        // 【目的】api/helloのget apiが正しく動くかテストする
         @Test
-        //【目的】api/helloのget apiが正しく動くかテストする
-        fun `status code OKを返す`(){
+        fun `status code OKを返す`()  {
             mockMvc
                 .perform(get("/api/hello"))
                 .andExpect(status().isOk)
         }
+
+        // [目的] api/helloのget apiが"Hello"を返す
         @Test
-        //[目的] api/helloのget apiが"Hello"を返す
-        fun `helloを返す`(){
-            val resultValue = mockMvc
-                .perform(get("/api/hello"))
-                .andReturn()
-            assertEquals(resultValue.response.contentAsString,"hello")
+        fun `helloを返す`()  {
+            val resultValue =
+                mockMvc
+                    .perform(get("/api/hello"))
+                    .andReturn()
+            assertEquals(resultValue.response.contentAsString, "hello")
         }
     }
 }

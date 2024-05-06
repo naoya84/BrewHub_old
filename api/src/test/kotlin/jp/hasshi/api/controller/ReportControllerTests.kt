@@ -36,9 +36,10 @@ class SpyReportService() : ReportService {
 
 class ReportControllerTests {
     private var spyReportService: SpyReportService = SpyReportService()
-    private var mockMvc: MockMvc = MockMvcBuilders.standaloneSetup(
-        ReportController(reportService = spyReportService)
-    ).build()
+    private var mockMvc: MockMvc =
+        MockMvcBuilders.standaloneSetup(
+            ReportController(reportService = spyReportService),
+        ).build()
 
     @Nested
     @DisplayName("GET: /api/report")
@@ -77,26 +78,30 @@ class ReportControllerTests {
         @Test
         fun `status code CREATEDを返す`() {
             mockMvc
-                .perform(post("/api/report/create")
-                    .contentType(MediaType.APPLICATION_JSON)
-                    .content(
-                        """
-                                "aaa"
-                            """.trimIndent()
-                    ))
+                .perform(
+                    post("/api/report/create")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(
+                            """
+                            "aaa"
+                            """.trimIndent(),
+                        ),
+                )
                 .andExpect(status().isCreated)
         }
 
         @Test
         fun `createが呼ばれる`() {
             mockMvc
-                .perform(post("/api/report/create")
-                    .contentType(MediaType.APPLICATION_JSON)
-                    .content(
-                        """
-                                "aaa"
-                            """.trimIndent()
-                    ))
+                .perform(
+                    post("/api/report/create")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(
+                            """
+                            "aaa"
+                            """.trimIndent(),
+                        ),
+                )
 
             assertEquals(spyReportService.create_wasCalled, true)
         }
@@ -111,9 +116,9 @@ class ReportControllerTests {
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(
                             """
-                                "aaa"
-                            """.trimIndent()
-                        )
+                            "aaa"
+                            """.trimIndent(),
+                        ),
                 )
                 .andExpect(jsonPath("$.id").value(1))
                 .andExpect(jsonPath("$.text").value("aaa"))

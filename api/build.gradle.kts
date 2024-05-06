@@ -1,4 +1,5 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+import org.openapitools.generator.gradle.plugin.tasks.GenerateTask
 
 plugins {
     kotlin("jvm") version "1.9.23"
@@ -7,6 +8,7 @@ plugins {
     id("io.spring.dependency-management") version "1.1.4"
     id("org.jlleitschuh.gradle.ktlint") version "12.1.0"
     id("org.springdoc.openapi-gradle-plugin") version "1.8.0"
+    id("org.openapi.generator") version "7.4.0"
 }
 
 group = "jp.hasshi"
@@ -39,4 +41,16 @@ tasks.withType<KotlinCompile> {
 
 tasks.withType<Test> {
     useJUnitPlatform()
+}
+
+tasks.register("openApiGenerateAll") {
+    dependsOn(
+        "openApiGenerateForSwift",
+    )
+}
+
+tasks.register<GenerateTask>("openApiGenerateForSwift") {
+    generatorName = "swift5"
+    inputSpec = project.layout.buildDirectory.dir("openapi.json").get().asFile.path
+    outputDir = project.layout.buildDirectory.dir("openapi/ios/OpenApiClient").get().asFile.path
 }

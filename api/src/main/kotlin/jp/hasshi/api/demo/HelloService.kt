@@ -7,7 +7,7 @@ interface HelloService {
 }
 
 @Service
-class HelloServiceImpl: HelloService {
+class HelloServiceImpl : HelloService {
     override fun sayHello(): String {
         TODO("Not yet implemented")
     }

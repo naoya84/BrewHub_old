@@ -2,46 +2,44 @@ package jp.hasshi.api.service
 
 import jp.hasshi.api.domain.entity.ReportEntity
 import jp.hasshi.api.repository.ReportRepository
-import jp.hasshi.api.service.ReportService
-import jp.hasshi.api.service.ReportServiceImpl
+import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest
-import org.assertj.core.api.Assertions.assertThat
-
 
 @DataJpaTest
-class ReportServiseTests{
+class ReportServiseTests {
     @Autowired
     lateinit var reportRepository: ReportRepository
     lateinit var reportService: ReportService
 
     @BeforeEach
-    fun setup(){
+    fun setup()  {
         reportService = ReportServiceImpl(reportRepository = reportRepository)
     }
 
     @Test
-    fun `getAllを呼ぶとReport一覧を返す`(){
-        //given
+    fun `getAllを呼ぶとReport一覧を返す`()  {
+        // given
         val reportEntity = ReportEntity(text = "aaaa")
         reportRepository.save(reportEntity)
 
-        //when
+        // when
         val report = reportService.getAll()
 
-        //then
+        // then
         assertThat(report).hasSize(1)
         assertThat(report[0].id).isEqualTo(reportEntity.id)
         assertThat(report[0].text).isEqualTo("aaaa")
     }
+
     @Test
-    fun `createを呼ぶとReportを保存する`(){
-        //when
+    fun `createを呼ぶとReportを保存する`()  {
+        // when
         val report = reportService.create("bbbb")
 
-        //then
+        // then
         assertThat(report.id).isEqualTo(1)
         assertThat(report.text).isEqualTo("bbbb")
     }
