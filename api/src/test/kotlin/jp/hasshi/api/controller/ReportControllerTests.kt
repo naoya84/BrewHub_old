@@ -1,5 +1,7 @@
-package jp.hasshi.api
+package jp.hasshi.api.controller
 
+import jp.hasshi.api.domain.model.Report
+import jp.hasshi.api.service.ReportService
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.api.Nested

@@ -6,15 +6,18 @@
 //
 
 import Foundation
+import Alamofire
 
 struct DIContainer{
     let photoRepository: PhotoRepository
     let reportRepository: ReportRepository
     
     static func make()->DIContainer{
+        let apiClient = AFAPIClient(session: Session())
+        
         return DIContainer.init(
             photoRepository: PhotoRepositoryImpl(),
-            reportRepository: ReportRepositoryImpl()
+            reportRepository: ReportRepositoryImpl(apiClient: apiClient)
         )
     }
 }

@@ -29,6 +29,9 @@
 		CE8290D52BCBE5A9000C5AAD /* SpyReportRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8290D42BCBE5A9000C5AAD /* SpyReportRepository.swift */; };
 		CEB9D6392BC1341B0050DF64 /* RecordPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB9D6382BC1341B0050DF64 /* RecordPageView.swift */; };
 		CEB9D63B2BC134DB0050DF64 /* CALayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB9D63A2BC134DB0050DF64 /* CALayerView.swift */; };
+		CED6AECC2BE0CC850074FD09 /* PostReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6AECB2BE0CC850074FD09 /* PostReport.swift */; };
+		CED6AECE2BE0CF6B0074FD09 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6AECD2BE0CF6B0074FD09 /* APIClient.swift */; };
+		CED6AED02BE0D14B0074FD09 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6AECF2BE0D14B0074FD09 /* APIRequest.swift */; };
 		CEE727D42BB456CE00777459 /* iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE727D32BB456CE00777459 /* iosApp.swift */; };
 		CEE727D62BB456CE00777459 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE727D52BB456CE00777459 /* ContentView.swift */; };
 		CEE727D82BB456CF00777459 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE727D72BB456CF00777459 /* Assets.xcassets */; };
@@ -65,6 +68,9 @@
 		CE8290D42BCBE5A9000C5AAD /* SpyReportRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyReportRepository.swift; sourceTree = "<group>"; };
 		CEB9D6382BC1341B0050DF64 /* RecordPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordPageView.swift; sourceTree = "<group>"; };
 		CEB9D63A2BC134DB0050DF64 /* CALayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerView.swift; sourceTree = "<group>"; };
+		CED6AECB2BE0CC850074FD09 /* PostReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostReport.swift; sourceTree = "<group>"; };
+		CED6AECD2BE0CF6B0074FD09 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		CED6AECF2BE0D14B0074FD09 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		CEE727D02BB456CE00777459 /* ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEE727D32BB456CE00777459 /* iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iosApp.swift; sourceTree = "<group>"; };
 		CEE727D52BB456CE00777459 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -152,6 +158,16 @@
 			path = TestDoubles;
 			sourceTree = "<group>";
 		};
+		CED6AECA2BE0CC6F0074FD09 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				CED6AECB2BE0CC850074FD09 /* PostReport.swift */,
+				CED6AECD2BE0CF6B0074FD09 /* APIClient.swift */,
+				CED6AECF2BE0D14B0074FD09 /* APIRequest.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		CEE727C72BB456CE00777459 = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +193,7 @@
 				CEE727D32BB456CE00777459 /* iosApp.swift */,
 				CE8290942BC28D11000C5AAD /* AppPath.swift */,
 				CE8290A02BC2CE50000C5AAD /* UUIDProvider.swift */,
+				CED6AECA2BE0CC6F0074FD09 /* API */,
 				CE8290962BC28D85000C5AAD /* Views */,
 				CE8290992BC2AA8C000C5AAD /* Repositories */,
 				CEE727D92BB456CF00777459 /* Preview Content */,
@@ -350,10 +367,13 @@
 				CE8290A12BC2CE50000C5AAD /* UUIDProvider.swift in Sources */,
 				CEE727D62BB456CE00777459 /* ContentView.swift in Sources */,
 				CEE727D42BB456CE00777459 /* iosApp.swift in Sources */,
+				CED6AECE2BE0CF6B0074FD09 /* APIClient.swift in Sources */,
 				CE8290952BC28D11000C5AAD /* AppPath.swift in Sources */,
 				CEB9D6392BC1341B0050DF64 /* RecordPageView.swift in Sources */,
 				CE82909F2BC2B4A8000C5AAD /* DIContainer.swift in Sources */,
+				CED6AECC2BE0CC850074FD09 /* PostReport.swift in Sources */,
 				CE8290982BC296C4000C5AAD /* PhotoIndexPageView.swift in Sources */,
+				CED6AED02BE0D14B0074FD09 /* APIRequest.swift in Sources */,
 				CE8290CF2BCBD0EA000C5AAD /* Report.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

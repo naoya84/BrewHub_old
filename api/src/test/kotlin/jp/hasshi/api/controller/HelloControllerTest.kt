@@ -1,4 +1,4 @@
-package jp.hasshi.api
+package jp.hasshi.api.controller
 
 import jp.hasshi.api.demo.HelloController
 import org.junit.jupiter.api.Assertions.*

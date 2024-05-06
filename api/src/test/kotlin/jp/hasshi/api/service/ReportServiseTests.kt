@@ -1,5 +1,9 @@
-package jp.hasshi.api
+package jp.hasshi.api.service
 
+import jp.hasshi.api.domain.entity.ReportEntity
+import jp.hasshi.api.repository.ReportRepository
+import jp.hasshi.api.service.ReportService
+import jp.hasshi.api.service.ReportServiceImpl
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired

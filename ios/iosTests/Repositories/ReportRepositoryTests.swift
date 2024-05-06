@@ -18,10 +18,10 @@ final class ReportRepositoryTests: XCTestCase {
         
         // When: ReportRepositoryのcreateメソッドを実行した時
         let recordRepository = DIContainer.make().reportRepository
-        let result = recordRepository.create(report: Report(text: "test"))
+        recordRepository.create(report: Report(id: 0, text: "test"))
         
         //Then: エンドポイントがlocalhost:8080/reportである
-        expect(result).to(equal("test"))
+        expect("").to(equal("test"))
     }
 
 }

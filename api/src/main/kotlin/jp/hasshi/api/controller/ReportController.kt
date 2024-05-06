@@ -1,5 +1,7 @@
-package jp.hasshi.api
+package jp.hasshi.api.controller
 
+import jp.hasshi.api.domain.model.Report
+import jp.hasshi.api.service.ReportService
 import org.springframework.http.HttpStatus
 import org.springframework.web.bind.annotation.*
 
@@ -13,9 +15,11 @@ class ReportController(val reportService: ReportService) {
 
     @PostMapping("/create")
     @ResponseStatus(HttpStatus.CREATED)
-    fun create(@RequestBody body: SaveReportBody): Report {
+    fun create(body: SaveReportBody): Report {
+        //@ResponseBody: キーと値のペアでデータを受け取る
+        //@ModelAttribute: jsonなどのオブジェクトを受け取る
         return reportService.create(body.text)
     }
 }
 
-data class SaveReportBody(var text: String)
+data class SaveReportBody(val text: String = "")

@@ -17,7 +17,9 @@ struct CreateReportPageView: View {
             .frame(width: 300, height: 300)
             .border(.black)
         Button("投稿"){
-            viewModel.sendReport()
+            Task {
+                await viewModel.sendReport()
+            }
             path.append(AppPath.Main)
             print("投稿しました")
         }
@@ -34,9 +36,9 @@ extension CreateReportPageView {
             self.container = container
         }
         
-        func sendReport(){
+        func sendReport() async {
             let reportRepository = container.reportRepository
-            reportRepository.create(report: report)
+            await reportRepository.create(report: report)
         }
     }
 }
@@ -44,6 +46,6 @@ extension CreateReportPageView {
 #Preview {
     CreateReportPageView(
         path: .constant(NavigationPath()),
-        viewModel: .init(report: Report(text: ""), container: DIContainer.make())
+        viewModel: .init(report: Report(id: 0,text: ""), container: DIContainer.make())
     )
 }

@@ -1,6 +1,6 @@
-package jp.hasshi.api
+package jp.hasshi.api.repository
 
-import org.springframework.data.jpa.repository.Query
+import jp.hasshi.api.domain.entity.ReportEntity
 import org.springframework.data.repository.CrudRepository
 
 interface ReportRepository: CrudRepository<ReportEntity, Long> {

@@ -43,7 +43,7 @@ struct BrewHubAppContent:View {
         case .PhotoIndex: PhotoIndexPageView(container: container)
         case .CreateReport: CreateReportPageView(
             path: $path,
-            viewModel: .init(report: Report(text: ""), container: container)
+            viewModel: .init(report: Report(id: 0, text: ""), container: container)
         )
         }
     }
