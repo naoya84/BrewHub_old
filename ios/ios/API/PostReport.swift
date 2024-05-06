@@ -7,14 +7,14 @@
 
 import Foundation
 import Alamofire
-import
+import OpenAPIClient
 
 struct PostReport: UploadAPIRequest {
     typealias ResponseType = String
-    typealias RequestType = SaveParameter
+    typealias RequestType = SaveReportBody
     
     let url: URL
-    let parameters: RequestType
+    let parameters: SaveReportBody
     let method: Method = .post
     var headers: [String: String] {
         return ["Content-Type": "application/json"]

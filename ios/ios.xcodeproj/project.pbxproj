@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -32,6 +32,7 @@
 		CED6AECC2BE0CC850074FD09 /* PostReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6AECB2BE0CC850074FD09 /* PostReport.swift */; };
 		CED6AECE2BE0CF6B0074FD09 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6AECD2BE0CF6B0074FD09 /* APIClient.swift */; };
 		CED6AED02BE0D14B0074FD09 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6AECF2BE0D14B0074FD09 /* APIRequest.swift */; };
+		CED6AEDC2BE8C4A50074FD09 /* OpenAPIClient in Frameworks */ = {isa = PBXBuildFile; productRef = CED6AEDB2BE8C4A50074FD09 /* OpenAPIClient */; };
 		CEE727D42BB456CE00777459 /* iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE727D32BB456CE00777459 /* iosApp.swift */; };
 		CEE727D62BB456CE00777459 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE727D52BB456CE00777459 /* ContentView.swift */; };
 		CEE727D82BB456CF00777459 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE727D72BB456CF00777459 /* Assets.xcassets */; };
@@ -85,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CED6AEDC2BE8C4A50074FD09 /* OpenAPIClient in Frameworks */,
 				CE7B803F2BCE9F9500D07420 /* Alamofire in Frameworks */,
 				CE7B80412BCE9F9500D07420 /* AlamofireDynamic in Frameworks */,
 			);
@@ -244,6 +246,7 @@
 			packageProductDependencies = (
 				CE7B803E2BCE9F9500D07420 /* Alamofire */,
 				CE7B80402BCE9F9500D07420 /* AlamofireDynamic */,
+				CED6AEDB2BE8C4A50074FD09 /* OpenAPIClient */,
 			);
 			productName = ios;
 			productReference = CEE727D02BB456CE00777459 /* ios.app */;
@@ -303,6 +306,7 @@
 				CE8290B62BC4331F000C5AAD /* XCRemoteSwiftPackageReference "ViewInspector" */,
 				CE8290BD2BC4EAB8000C5AAD /* XCRemoteSwiftPackageReference "Nimble" */,
 				CE7B803D2BCE9F9500D07420 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				CED6AEDA2BE8C4A50074FD09 /* XCLocalSwiftPackageReference "../openapi/ios/OpenApiClient" */,
 			);
 			productRefGroup = CEE727D12BB456CE00777459 /* Products */;
 			projectDirPath = "";
@@ -660,6 +664,13 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		CED6AEDA2BE8C4A50074FD09 /* XCLocalSwiftPackageReference "../openapi/ios/OpenApiClient" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../openapi/ios/OpenApiClient;
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCRemoteSwiftPackageReference section */
 		CE7B803D2BCE9F9500D07420 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
@@ -707,6 +718,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CE8290BD2BC4EAB8000C5AAD /* XCRemoteSwiftPackageReference "Nimble" */;
 			productName = Nimble;
+		};
+		CED6AEDB2BE8C4A50074FD09 /* OpenAPIClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = OpenAPIClient;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
